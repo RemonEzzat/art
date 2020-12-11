@@ -1,0 +1,6 @@
+<div *ngIf="isload; else data">loading now.......</div>
+<ng-template #data>
+<div *ngFor="let art of allArtical">
+    <app-single-artical artical= art></app-single-artical>
+</div>
+</ng-template>

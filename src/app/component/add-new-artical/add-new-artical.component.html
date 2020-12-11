@@ -1,0 +1,11 @@
+<form formGroup ="articalModel" (ngSubmit)="addArtical()" >
+<!-- #x="ngForm"-->    
+<div class="form-group">
+    <label for="">Title</label>
+    <input type="text" formControlName="title" class="form-control" placeholder="Title">
+    <label for="">Post</label>
+    <textarea formControlName="content" class="form-control" rows="8" cols="80" placeholder="New Artical"> </textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Publish</button>
+
+</form>

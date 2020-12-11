@@ -1,0 +1,10 @@
+<h2>Register</h2>
+<h1>{{errRegister}}</h1>
+<h2>{{msg}}</h2>
+<form [formGroup] ="userModel" (ngSubmit)="addUser()" >
+<!-- #x="ngForm"-->    
+    <input placeholder="Name" formControlName='name'>
+    <input placeholder="Email" formControlName="email">
+    <input type="password" placeholder="Password" formControlName="password" name="password"> 
+    <button type="submit" >Add</button>
+</form>
