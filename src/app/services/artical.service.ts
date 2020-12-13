@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { AddArtical } from '../Model/artical.model';
 
@@ -17,7 +17,7 @@ export class ArticalService {
     return this._http.get(`${this.defaultUrl}articals`)
   }
   getSingle(id):Observable<any>{
-    return this._http.get(`${this.defaultUrl}artical&artical_id=${id}`)
+    return this._http.get(`${this.defaultUrl}articals&articalID=${id}`)
    
   }
 }

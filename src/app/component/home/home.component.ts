@@ -11,8 +11,7 @@ export class HomeComponent implements OnInit {
   allArtical =[]
   isload:boolean = true
   err=null
-  constructor(private _artical:ArticalService,
-     private route:ActivatedRoute) { 
+  constructor(private _artical:ArticalService) { 
        this.getAllArticals()
      }
 
@@ -22,7 +21,7 @@ export class HomeComponent implements OnInit {
   getAllArticals(){
     this._artical.getArtical().subscribe(data=>{
       console.log(data)
-      this.allArtical=data.result.artical_data
+      this.allArtical=data.result.articalData
     },
     (err)=>{
       this.err="an error accured"

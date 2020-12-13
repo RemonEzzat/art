@@ -17,10 +17,9 @@ export class SingleArticalComponent implements OnInit {
   ngOnInit(): void {
   }
   getSingle(id){
-    //this.route.paramMap.subscribe(params=> {let i = params.get('id')})
     this._art.getSingle(id).subscribe(data=>{
-      this.artical= data.result.artical_data
-      console.log(data.result.artical_data)
+      this.artical= data.result.articalData
+      console.log(data.result.articalData)
     })
   }
 }

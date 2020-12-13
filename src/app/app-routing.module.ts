@@ -12,7 +12,7 @@ const routes: Routes = [
   {path:'register',component:RegisterComponent},
   {path:'artical', children: [
     {path:'',component:HomeComponent},
-    {path:':id',component:SingleArticalComponent}, //shop/:id
+    {path:':id',component:SingleArticalComponent}, 
   ]
 }
 ];
